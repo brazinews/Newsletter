@@ -1,61 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick News - Agosto 2026</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            width: 100%;
-            height: 80vh;
-            background: #ffffff;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .fallback-link {
-            margin-top: 15px;
-            font-size: 14px;
-        }
-        .fallback-link a {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .fallback-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick News — School of the Samba Unidos da Capital</title>
+<meta name="description" content="The bilingual (English &amp; Portuguese) monthly newsletter of Samba da Capital, Sacramento's Brazilian dance school. Read every edition.">
+<meta property="og:title" content="Quick News — School of the Samba Unidos da Capital">
+<meta property="og:description" content="The bilingual (English &amp; Portuguese) monthly newsletter of Samba da Capital, Sacramento's Brazilian dance school. Read every edition.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://samba-da-capital.github.io/Newsletter/">
+<meta property="og:image" content="https://samba-da-capital.github.io/Newsletter/og-Quick-News-Oct2026.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quick News — latest edition">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --green:#00913F; --greend:#04682F; --yellow:#FFD400; --cream:#FFFCF4;
+          --lgreen:#D9EEDE; --navy:#0A2A63; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--cream); font-family:Georgia,'Times New Roman',serif; color:#1B222C; }
+  .bar { height:7px; background:var(--green); }
+  .bar2 { height:4px; background:var(--yellow); }
+  header { background:var(--lgreen); padding:30px 20px 26px; text-align:center; }
+  header h1 { margin:0 0 6px; font-size:clamp(26px,6vw,40px); color:var(--navy); letter-spacing:.5px; }
+  header p { margin:0; color:var(--greend); font-size:clamp(12px,2.6vw,15px); font-weight:bold; letter-spacing:1px; text-transform:uppercase; }
+  header .tag { margin-top:10px; color:#3A4250; font-weight:normal; text-transform:none; letter-spacing:0; font-size:clamp(14px,3vw,16px); }
+  main { max-width:900px; margin:0 auto; padding:28px 16px 36px; }
+  h2 { font-size:13px; color:#70747C; letter-spacing:1.2px; text-transform:uppercase; margin:0 0 14px; }
+  .latest { display:block; text-decoration:none; color:inherit; background:#fff; border-radius:12px; overflow:hidden;
+            box-shadow:0 3px 16px rgba(0,0,0,.12); margin-bottom:34px; }
+  .latest img { width:100%; height:auto; display:block; aspect-ratio:1200/630; object-fit:cover; }
+  .latest .body { padding:18px 20px 22px; }
+  .issue { font-size:12px; font-weight:bold; color:var(--greend); letter-spacing:1px; text-transform:uppercase; }
+  .latest h3 { margin:6px 0 8px; font-size:clamp(20px,4.4vw,26px); color:var(--navy); }
+  .latest p { margin:0 0 6px; line-height:1.5; }
+  .latest p.pt { color:#4A5260; font-style:italic; }
+  .read { display:inline-block; margin-top:12px; background:var(--greend); color:#fff; padding:11px 22px; border-radius:30px; font-weight:bold; font-size:15px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:18px; }
+  .card { display:block; text-decoration:none; color:inherit; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,.10); }
+  .card img { width:100%; height:auto; aspect-ratio:1200/630; object-fit:cover; display:block; }
+  .card .body { padding:12px 14px 16px; }
+  .card h3 { margin:4px 0 6px; font-size:18px; color:var(--navy); }
+  .card p { margin:0; font-size:14px; line-height:1.45; color:#3A4250; }
+  .latest:hover, .card:hover { box-shadow:0 4px 20px rgba(0,0,0,.2); }
+  .latest:focus-visible, .card:focus-visible { outline:3px solid var(--yellow); outline-offset:3px; }
+  .cta { text-align:center; margin:34px 0 4px; }
+  .cta p { margin:0 0 12px; font-size:clamp(15px,3.2vw,18px); }
+  .cta a { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; padding:13px 26px; border-radius:30px; font-size:16px; font-weight:bold; }
+  footer { background:var(--lgreen); padding:22px 16px; text-align:center; font-size:14px; line-height:1.7; }
+  footer a { color:var(--navy); }
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- Replace Quick-News-Aug2026.pdf with your actual filename -->
-        <iframe src="Quick-News-Aug2026.pdf"></iframe>
+<div class="bar"></div><div class="bar2"></div>
+<header>
+  <h1>Quick News</h1>
+  <p>School of the Samba Unidos da Capital &middot; Sacramento</p>
+  <p class="tag">Our monthly newsletter in English &amp; Portuguese &middot; <em>Nosso boletim mensal em inglês e português</em></p>
+</header>
+<main>
+  <h2>Latest edition &middot; <em>Edição mais recente</em></h2>
+  <a class="latest" href="Quick-News-Oct2026.html">
+    <img src="og-Quick-News-Oct2026.jpg" alt="Quick News, October 2026 front page" width="1200" height="630">
+    <div class="body">
+      <div class="issue">N.º 03 &middot; October 2026</div>
+      <h3>Saara Burga honored, Pampas Steakhouse &amp; Festival highlights</h3>
+      <p>Saara Burga honored as <em>El Destacado Dorado</em> at the River Cats&rsquo; Hispanic Heritage Night, the story behind Pampas Brazilian Steakhouse in Vacaville, and highlights from the Brazilian Festival.</p>
+      <p class="pt">Saara Burga homenageada na Noite da Herança Hispânica do River Cats, a história da Pampas Brazilian Steakhouse e os destaques do Festival Brasileiro.</p>
+      <span class="read">Read October &middot; <em>Ler outubro</em> &rarr;</span>
     </div>
-    
-    <div class="fallback-link">
-        <p>Se o PDF não carregar, <a href="Quick-News-Aug2026.pdf" target="_blank">clique aqui para baixar ou visualizar</a>.</p>
-    </div>
+  </a>
+
+  <h2>Past editions &middot; <em>Edições anteriores</em></h2>
+  <div class="grid">
+    <a class="card" href="Quick-News-Sep2026.html">
+      <img src="og-Quick-News-Sep2026.jpg" alt="Quick News, September 2026 front page" width="1200" height="630" loading="lazy">
+      <div class="body">
+        <div class="issue">N.º 02 &middot; September 2026</div>
+        <h3>Brazilian Heritage Month is here</h3>
+        <p>The Brazilian Festival on Sept 26, the South Lake Tahoe Multicultural Celebration, and Sambafy.</p>
+      </div>
+    </a>
+    <a class="card" href="Quick-News-Aug2026.html">
+      <img src="og-Quick-News-Aug2026.jpg" alt="Quick News, August 2026 front page" width="1200" height="630" loading="lazy">
+      <div class="body">
+        <div class="issue">N.º 01 &middot; August 2026</div>
+        <h3>Our very first edition</h3>
+        <p>September declared Brazilian National Heritage Month, plus festivals, drumming classes and more.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="cta">
+    <p>Dance with us &mdash; your first class is free!</p>
+    <a href="https://www.brazilianculturesacramento.com/book-online">Book online &middot; <em>Agende online</em></a>
+  </div>
+</main>
+<footer>
+  Let&rsquo;s keep in touch! Email us at <a href="mailto:schoolofsamba@yahoo.com">schoolofsamba@yahoo.com</a><br>7324 Folsom Blvd, Sacramento &middot; Sundays 2:00 PM &middot; <a href="tel:+19165191910">(916) 519-1910</a><br>
+  Sponsored by Kuenta Bookkeeping Services at <a href="https://mykuenta.com"><strong>mykuenta.com</strong></a>
+</footer>
+<div class="bar2"></div><div class="bar"></div>
 </body>
 </html>
